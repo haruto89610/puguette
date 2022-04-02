@@ -40,7 +40,7 @@ public:
 
   // Rotation matrix around X (roll)
   // roll = np.radians(roll)
-  const auto X() -> float4x4 {
+  auto X() -> float4x4 {
     return float4x4{
       { 1.0, 0.0, 0.0, 0.0 },
       { 0.0, std::cos(orientation_.roll), -std::sin(orientation_.roll), 0.0 },
@@ -51,7 +51,7 @@ public:
 
   // Rotation matrix around Y (pitch)
   // pitch = np.radians(pitch)
-  const auto Y() -> float4x4 {
+  auto Y() -> float4x4 {
     return float4x4{
       { std::cos(orientation_.pitch),  0.0, std::sin(orientation_.pitch), 0.0 },
       { 0.0, 1.0, 0.0, 0.0 },
@@ -62,7 +62,7 @@ public:
 
   // Rotation matrix around Z (yaw)
   // yaw = np.radians(yaw)
-  const auto Z() -> float4x4 {
+  auto Z() -> float4x4 {
     return float4x4{
       { std::cos(orientation_.yaw), 0.0, -std::sin(orientation_.yaw), 0.0 },
       { std::sin(orientation_.yaw), 0.0, std::cos(orientation_.yaw),  0.0 },
@@ -71,7 +71,7 @@ public:
     };
   }
 
-  const auto rotation() -> float4x4 {
+  auto rotation() -> float4x4 {
     if ((FP_ZERO == std::fpclassify(orientation_.roll)) &&
         (FP_ZERO == std::fpclassify(orientation_.pitch)) &&
         (FP_ZERO == std::fpclassify(orientation_.yaw))) {
@@ -82,7 +82,7 @@ public:
     }
   }
 
-  const auto rotate() -> float4x4 {
+  auto rotate() -> float4x4 {
     const auto translation {
       float4x4 {
         { 1.0, 0.0, 0.0, position_.x },
