@@ -83,14 +83,20 @@ public:
   }
 
   auto rotate() -> float4x4 {
-    const auto translation {
-      float4x4 {
-        { 1.0, 0.0, 0.0, position_.x },
-        { 0.0, 1.0, 0.0, position_.y },
-        { 0.0, 0.0, 1.0, position_.z },
-        { 0.0, 0.0, 0.0, 1.0         }
-      }
-    };
-    return mul(translation, rotation());
+    return mul(translation(), rotation());
   }
+
+  auto translation() -> float4x4 {
+    return float4x4 {
+      { 1.0, 0.0, 0.0, position_.x },
+      { 0.0, 1.0, 0.0, position_.y },
+      { 0.0, 0.0, 1.0, position_.z },
+      { 0.0, 0.0, 0.0, 1.0         }
+    };
+  }
+
+  auto transform() -> float3 {
+    return float3{ 0.0, 0.0, 0.0 };
+  }
+
 };
