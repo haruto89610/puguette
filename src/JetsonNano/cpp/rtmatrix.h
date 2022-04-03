@@ -43,7 +43,7 @@ public:
   }
 
   auto transform() -> float4 {
-    return mul(rotation(), translation(), float4 { coordinate_.x, coordinate_.y, coordinate_.z, 1.0 });
+    return mul(rotation(), transpose(translation()), float4 { coordinate_.x, coordinate_.y, coordinate_.z, 1.0 });
   }
 
 private:
