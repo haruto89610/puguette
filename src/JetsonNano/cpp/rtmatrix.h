@@ -53,8 +53,8 @@ private:
   auto Rx() -> float4x4 {
     return float4x4{
       { 1.0, 0.0, 0.0, 0.0 },
-      { 0.0, std::cos(orientation_.roll),  -std::sin(orientation_.roll), 0.0 },
-      { 0.0, std::sin(orientation_.roll), std::cos(orientation_.roll), 0.0 },
+      { 0.0, std::cos(orientation_.roll), -std::sin(orientation_.roll), 0.0 },
+      { 0.0, std::sin(orientation_.roll), std::cos(orientation_.roll),  0.0 },
       { 0.0, 0.0, 0.0, 1.0 }
     };
   }
@@ -63,9 +63,9 @@ private:
   // pitch = np.radians(pitch)
   auto Ry() -> float4x4 {
     return float4x4{
-      { std::cos(orientation_.pitch), 0.0, std::sin(orientation_.pitch), 0.0 },
+      { std::cos(orientation_.pitch),  0.0, std::sin(orientation_.pitch), 0.0 },
       { 0.0, 1.0, 0.0, 0.0 },
-      { -std::sin(orientation_.pitch), 0.0, std::cos(orientation_.pitch),  0.0 },
+      { -std::sin(orientation_.pitch), 0.0, std::cos(orientation_.pitch), 0.0 },
       { 0.0, 0.0, 0.0, 1.0 }
     };
   }
@@ -74,8 +74,8 @@ private:
   // yaw = np.radians(yaw)
   auto Rz() -> float4x4 {
     return float4x4{
-      { std::cos(orientation_.yaw),  -std::sin(orientation_.yaw), 0.0, 0.0 },
-      { std::sin(orientation_.yaw), std::cos(orientation_.yaw), 0.0, 0.0 },
+      { std::cos(orientation_.yaw), -std::sin(orientation_.yaw), 0.0, 0.0 },
+      { std::sin(orientation_.yaw), std::cos(orientation_.yaw),  0.0, 0.0 },
       { 0.0, 0.0, 1.0, 0.0 },
       { 0.0, 0.0, 0.0, 1.0 }
     };
