@@ -2,7 +2,7 @@
 // g++ -o pug --std=c++11 main.cpp -lm
 
 #include <iostream>
-#include "rtmatrix.h"
+#include "Matrices.h"
 
 using namespace linalg::ostream_overloads;
 
