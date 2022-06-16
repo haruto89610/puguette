@@ -6,7 +6,7 @@
 
 [Youtube explanation in Japanese](https://www.youtube.com/watch?v=FokTPg63v5w)
 
-<img src="./images/Puguette_Front.png" width="475" height="300"/>
+<p><img src="./images/Puguette_Front.png" width="475" height="300"/></p>
 |||
 |:---|:---|
 |<p><img src="./images/puguette.png" width="475" height="300"/>(In progress)</p>|<p><img src="./images/puguette_model.png" width="475" height="300"/>(3D model)</p>|
