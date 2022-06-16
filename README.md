@@ -3,6 +3,7 @@
 instagram: @haruto89610
 
 [Japanese](./README_jp.md)
+[Youtube explanation in Japanese](https://www.youtube.com/watch?v=FokTPg63v5w)
 
 |||
 |:---|:---|
