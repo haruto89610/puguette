@@ -1,3 +1,7 @@
+"""
+credit: https://hackaday.io/project/171456-diy-hobby-servos-quadruped-robot
+"""
+
 import numpy as np
 
 def Rx(roll):
