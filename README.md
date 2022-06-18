@@ -9,7 +9,7 @@
 ![](./images/Photo.jpg)
 |||
 |:---|:---|
-|<p><img src="./images/puguette.png"/>(In progress)</p>|<p><img src="./images/puguette_model.png" width="475" height="300"/>(3D model)</p>|
+|<p><img src="./images/puguette.png"/>(In progress)</p>|<p><img src="./images/puguette_model.png"/>(3D model)</p>|
 
 
 ## Introduction
