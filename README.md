@@ -35,7 +35,7 @@ The Jetson Nano is the center of this robot. It communicates with the Teensy 3.6
 ## Hardware Specification
 
 There are 2 different (although similar) actuators designed. One for the x8318s motor, and one for the 8308 motor.
-The total torque for each actuator is approx. 55Nm. The 8308 motor is connected to a 1:2 timing belt system to further increase torque.
+The total torque for each actuator is approx. 55Nm. The 8308 motor is connected to a 12:21 chain transmission system to further increase torque.
 
 | Name | Unit | Description |
 | :--- | :--- | :--- |
