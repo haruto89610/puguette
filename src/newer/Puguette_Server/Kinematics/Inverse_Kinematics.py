@@ -2,7 +2,7 @@ import numpy as np
 
 def checkdomain(D):
     if D > 1 or D < -1:
-#        print("OUT OF DOMAIN")
+        print("OUT OF DOMAIN")
         if D > 1:
             D = 0.99
             return D

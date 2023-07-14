@@ -203,7 +203,7 @@ def main():
 
             #-------------------GAITS-------------------#
             if speed != 0 or angle != 0:
-                if T <= 0:
+                if T < 0:
                     T = 2
                 elif T <= 0.5:
                     coords[3][0], coords[3][2] = Walk.bezier(0.5-T) # BL
@@ -258,7 +258,7 @@ def main():
                                    [0.00,  0.6, -0.40]])
                 rotations = np.array([0.00, 0.00, 0.00])
                 translations = np.array([0.00, 0.00, 0.00])
-            print(coords)
+            print(T, speed)
 #            #FL
             odrive_can_cmd(Joint.FL_hip.value, Commands.INPUT_POS.value, [0, 0, 0], 'fhh')
             odrive_can_cmd(Joint.FL_upper.value, Commands.INPUT_POS.value, [Model.Kinematic_Model(coords, rotations, translations)[1][0][1], 0, 0], 'fhh')
